@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(movieRouter);
 
 app.get("/", (req, res) => {
-  res.send("TO DO APP BACKEND SERVICE RUNNING");
+  res.send("SERVICE RUNNING");
 });
 
 export { app };

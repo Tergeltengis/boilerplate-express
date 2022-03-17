@@ -1,5 +1,5 @@
 import request from "supertest";
-import { app } from "../../app";
+import { app } from "../../src/app";
 import { setupEnvironment, tearDown } from "../utils/setupEnvironment";
 
 beforeAll(async () => {
