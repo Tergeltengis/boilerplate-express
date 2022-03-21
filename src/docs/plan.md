@@ -82,7 +82,7 @@ src\
 **movie routes:**
 
 ```GET /movies``` - get all movies <br>
-```POST /title``` - get movie by title<br>
+```GET /title``` - get movie by title<br>
 ```POST /movie``` - create movie<br>
 ```DELETE /movie``` - delete movie by id<br>
 
