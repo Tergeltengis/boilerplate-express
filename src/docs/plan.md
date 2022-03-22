@@ -86,6 +86,12 @@ src\
 ```POST /movie``` - create movie<br>
 ```DELETE /movie``` - delete movie by id<br>
 
+[API ENDPOINTS](https://documenter.getpostman.com/view/7893329/UVsQt4f7) :point_left:
+
+
+
+
+
 [Төлөвлөгөөг хэрэгжүүлэх хугацаа](https://docs.google.com/document/d/1X7HUwWSSjLHxj3UBwl6z2o5MGMiaf8Oq) :point_left:
 
 <hr/>

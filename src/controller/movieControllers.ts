@@ -3,6 +3,7 @@ import {
   getMoviesService,
   addMovieService,
   deleteMovieService,
+  updateMovieByTitleService,
 } from "../services/movieService";
 import { Request, Response } from "express";
 
@@ -17,7 +18,20 @@ export const getMovies = async (request: Request, response: Response) => {
 
 export const getMovieByTitle = async (request: Request, response: Response) => {
   try {
-    const result = await getMovieByTitleService(request);
+    const result = await getMovieByTitleService(request.params.title);
+    response.status(200).send(result);
+  } catch (error) {
+    /* istanbul ignore next */
+    response.status(500).send(error);
+  }
+};
+
+export const updateMovieByTitle = async (
+  request: Request,
+  response: Response
+) => {
+  try {
+    const result = await updateMovieByTitleService(request);
     response.status(200).send(result);
   } catch (error) {
     /* istanbul ignore next */

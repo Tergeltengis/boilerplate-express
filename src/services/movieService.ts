@@ -5,8 +5,12 @@ export const getMoviesService = () => {
   return Movie.find({});
 };
 
-export const getMovieByTitleService = (request: Request) => {
-  return Movie.find({}).where("title").equals(request.body.title);
+export const getMovieByTitleService = (request: string) => {
+  return Movie.find({}).where("title").equals(request);
+};
+
+export const updateMovieByTitleService = (request: Request) => {
+  return Movie.findByIdAndUpdate(request.params.id, request.body);
 };
 
 export const addMovieService = (request: Request) => {
