@@ -5,7 +5,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const port = process.env.PORT || 3000;
-const uri: string = process.env.MONGODB_HOST || "";
+const uri: string =
+  "mongodb+srv://master:91625500@cluster0.4rfmv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(uri);
 
